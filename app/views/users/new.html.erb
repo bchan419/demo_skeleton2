@@ -1,0 +1,68 @@
+<h1>Sign up</h1>
+
+<form accept-charset="UTF-8" class="form-horizontal" id="registerHere" method='post' action="/users">
+<fieldset>
+
+<legend>Registration</legend>
+
+<%#= render 'form' %>
+
+<form class="form-horizontal" id="registerHere" method='post' action=''><input name="authenticity_token" type="hidden" value="N3BiwRW2AwOuspAC0nV/gz24T4PrWHmCNlaU4Vlpz1s=" />
+<fieldset>
+
+<div class="control-group">
+  <label class="control-label" label for="user_first_name">First Name</label>
+  <div class="controls">
+  <input type="text" class="input-xlarge" id="user_first_name" name="user[first_name]" rel="popover" data-content="Enter your first name." data-original-title="First Name">
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" label for="user_last_name">Last Name</label>
+  <div class="controls">
+  <input type="text" class="input-xlarge" id="user_last_name" name="user[last_name]" rel="popover" data-content="Enter your last name." data-original-title="Last Name">
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" label for="user_email">Email</label>
+  <div class="controls">
+  <input type="text" class="input-xlarge" id="user_email" name="user[email]" rel="popover" data-content="Enter your email." data-original-title="Email">
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" label for="user_tsl_class">TSL Class</label>
+  <div class="controls">
+  <input type="text" class="input-xlarge" id="user_tsl_class" name="user[tsl_class]" rel="popover" data-content="Enter your TSL Class." data-original-title="TSL Class">
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" label for="user_password">Password</label>
+  <div class="controls">
+  <input type="password" class="input-xlarge" id="user_password" name="user[password]" rel="popover" data-content="Enter your Password." data-original-title="Password">
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" label for="user_password_confirmation">Password Confirmation</label>
+  <div class="controls">
+  <input type="password" class="input-xlarge" id="user_password_confirmation" name="user[password_confirmation]" rel="popover" data-content="Confirm your password." data-original-title="Password Confirmation">
+  </div>
+</div>
+
+
+<div class="control-group">
+<label class="control-label"></label>
+<div class="controls">
+<button type="submit" class="btn btn-success" >Create My Account</button>
+</div>
+</div>
+
+</fieldset>
+</form>
+
+
+<%= link_to 'Back', users_path %>
+
